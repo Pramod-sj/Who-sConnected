@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/background_curve_edge"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10sp"
+    android:gravity="center"
+    android:layout_margin="2sp">
+    <TextView
+        android:textSize="16sp"
+        android:text="80"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:singleLine="true"
+        android:padding="2sp"
+        android:ellipsize="marquee"
+        android:id="@+id/portNoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:textSize="@dimen/secondary_small_text_size"
+        android:text="80"
+        android:singleLine="true"
+        android:focusable="true"
+        android:textColor="@android:color/white"
+        android:focusableInTouchMode="true"
+        android:textStyle="bold"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:padding="2sp"
+        android:ellipsize="marquee"
+        android:id="@+id/portNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+</LinearLayout>

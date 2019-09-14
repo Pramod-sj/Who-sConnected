@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:animateLayoutChanges="true"
+    android:layout_height="match_parent"
+    tools:context=".ui.PingActivity">
+    <LinearLayout
+        android:id="@+id/pingInputLayout"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="5sp"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginRight="5sp"
+            android:layout_weight="0.3"
+            android:id="@+id/pingEdtLayout"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            android:hint="Enter IP address or hostname ">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pingEdt"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_alignParentTop="true"
+            android:layout_weight="0.7"
+            android:id="@+id/pingCountEdtLayout"
+            android:layout_marginLeft="5sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            android:hint="Ping count">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pingCountEdt"
+                android:inputType="number"
+                android:text="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:id="@+id/linearLayout"
+        android:layout_below="@id/pingInputLayout"
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_marginBottom="3sp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_margin="2sp"
+            android:background="@drawable/background_curve_edge"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5sp"
+            android:gravity="center"
+            android:layout_weight="1">
+            <TextView
+                android:text="Min time"
+                android:padding="2sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/darkColorAccent"
+                android:padding="2sp"
+                android:text="0.0 ms"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:id="@+id/minTimeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="2sp"
+            android:background="@drawable/background_curve_edge"
+            android:padding="5sp"
+            android:layout_weight="1"
+            android:layout_width="0sp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:text="Avg time"
+                android:padding="2sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="0.0 ms"
+                android:singleLine="true"
+                android:padding="2sp"
+                android:ellipsize="marquee"
+                android:textColor="@android:color/holo_orange_light"
+                android:id="@+id/avgTimeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_margin="2sp"
+            android:background="@drawable/background_curve_edge"
+            android:padding="5sp"
+            android:layout_weight="1"
+            android:layout_width="0sp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:text="Max time"
+                android:padding="2sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:textSize="16sp"
+                android:text="0.0 ms"
+                android:textStyle="bold"
+                android:padding="2sp"
+                android:textColor="@android:color/holo_red_light"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:id="@+id/maxTimeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:layout_marginBottom="5sp"
+        android:weightSum="3"
+        android:layout_below="@id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_margin="2sp"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="5sp"
+            android:background="@drawable/background_curve_edge"
+            android:layout_weight="1">
+            <TextView
+                android:text="Packet transmitted"
+                android:singleLine="true"
+                android:padding="2sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:textSize="16sp"
+                android:text="0"
+                android:textColor="@color/darkColorAccent"
+                android:textStyle="bold"
+                android:padding="2sp"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:id="@+id/packetSentTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0sp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5sp"
+            android:layout_margin="2sp"
+            android:background="@drawable/background_curve_edge"
+            android:layout_weight="1">
+            <TextView
+                android:text="Received"
+                android:padding="2sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:textSize="16sp"
+                android:text="0"
+                android:padding="2sp"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:textColor="@color/darkColorAccent"
+                android:ellipsize="marquee"
+                android:id="@+id/packetReceivedTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5sp"
+            android:gravity="center"
+            android:layout_margin="2sp"
+            android:background="@drawable/background_curve_edge"
+            android:layout_weight="1">
+            <TextView
+                android:padding="2sp"
+                android:text="Packet loss"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:textSize="16sp"
+                android:text="0%"
+                android:textStyle="bold"
+                android:textColor="@color/darkColorAccent"
+                android:singleLine="true"
+                android:padding="2sp"
+                android:ellipsize="marquee"
+                android:id="@+id/packetLossTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/linearLayout1"
+        android:id="@+id/pingSeqRecyclerVIew"
+        android:layout_width="match_parent"
+        android:nestedScrollingEnabled="false"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="5sp"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttonLayout"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/buttonLayout"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:animateLayoutChanges="true"
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp">
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="60sp"
+            android:text="Start ping"
+            android:id="@+id/startPingButton"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:visibility="gone"
+            android:text="Cancel ping"
+            android:height="60sp"
+            android:id="@+id/cancelPingButton"
+            app:backgroundTint="@android:color/holo_red_light"/>
+
+    </FrameLayout>
+
+</RelativeLayout>

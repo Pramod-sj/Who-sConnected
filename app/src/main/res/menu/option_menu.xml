@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_public_ip"
+        android:title="Your Public IP"
+        android:icon="@drawable/earth"/>
+    <item
+        android:id="@+id/menu_ping"
+        android:icon="@drawable/check_network_outline"
+        android:title="Ping"/>
+    <item
+        android:id="@+id/menu_port_scan"
+        android:icon="@drawable/ethernet"
+        android:title="Open Port scanner"/>
+    <item
+        android:id="@+id/menu_rate"
+        android:icon="@drawable/ic_rate_review_black_24dp"
+        android:title="Rate this app"
+        app:iconTint="@color/colorAccent"/>
+    <item
+        android:id="@+id/menu_share"
+        android:icon="@drawable/ic_share_black_24dp"
+        android:title="Share to friends"
+        app:iconTint="@color/colorAccent"/>
+    <item
+        android:id="@+id/menu_about"
+        android:title="About us"
+        android:icon="@drawable/ic_info_outline_black_24dp"
+        app:iconTint="@color/colorAccent"/>
+</menu>

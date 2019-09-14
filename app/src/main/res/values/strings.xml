@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Who\'sConnected?</string>
+    <string name="google_play_store_app_url">https://play.google.com/store/apps/details?id=com.whoisconnected</string>
+    <string name="share_desc_string">Is someone using your wifi without your permission? want to find who are they? Download Who\'sConnected? app now, this app will show you who and how many devices are connected to your wifi device. Along with finding devices connected to your wifi, this app additionally provide features like know your public ip, Ping a device and find open ports.</string>
+    <string name="banner_id">2559846617399290_2559980830719202</string>
+    <string name="interstitial_ad_id">2559846617399290_2559904640726821</string>
+    <string name="mopub_banner_ad_id">fc7489cfb9dc47a496d99f417c292904</string>
+    <string name="mopub_interstitial_ad_id">439f05d7ac574d28a6d9ae986e8e2495</string>
+    <string name="app_description">This app is made to help user to see who are connected to their wifi, this application additionally have features like pinging a server, port scanning and also helps you to find your public IP address.</string>
+    <string name="app_icon_strin"><div>Icons made by <a href="https://www.flaticon.com/authors/srip" title="srip">srip</a> from <a href="https://www.flaticon.com/" title="Flaticon">flaticon</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank" title="Creative Commons BY 3.0">CC 3.0 BY</a></div></string>
+    <string name="androidx_string"><div><a href="https://www.google.com" title="Androidx">Androidx</a></div></string>
+    <string name="facebook_ads_string"><div><a href="https://www.google.com" title="Facebook audience network sdk">Facebook audience network sdk</a></div></string>
+    <string name="room_db_string"><div><a href="https://www.google.com" title="Room database">Room database</a></div></string>
+    <string-array name="libraries">
+        <item>@string/androidx_string</item>
+        <item>@string/facebook_ads_string</item>
+        <item>@string/room_db_string</item>
+    </string-array>
+    <string name="credit2line">All the icons used in this application are downloaded from <a href="https://www.flaticon.com">flaticon</a></string>
+    <string name="open_source_lib_title_text">Open source libraries</string>
+    <string name="credit_lib_title_text">Credits</string>
+    <string name="developer_lib_title_text">Developer</string>
+    <string name="privacy_policy_title_text">Privacy policy</string>
+    <string name="t_and_c_title_text">Terms &amp; conditions</string>
+
+    <string name="dev_name">Pramod SJ</string>
+    <string name="dev_email"><a href="mailto:pramodsinghjantwal@gmail.com">pramodsinghjantwal@gmail.com</a></string>
+    <string name="made_text">Made with \u2764 in India</string>
+    <string name="local_ip_title_text">Local or Internal IP</string>
+    <string name="public_ip_title_text">Public or External IP</string>
+    <string name="country_title_text">Country</string>
+    <string name="cc_title_text">Country code</string>
+    <string name="no_ip">0.0.0.0</string>
+    <string name="last_scan_text">Last scan</string>
+    <string name="empty_data">- -</string>
+    <string name="address_title_text">Address</string>
+    <string name="vendor_title_text">Vendor</string>
+    <string name="mac_title_text">MAC address</string>
+    <string name="ip_title_text">IP address</string>
+    <string-array name="boarding_text_array">
+        <item>An app which will find who are connected to your wifi</item>
+        <item>In addition, this app also does the following for you</item>
+        <item>1). Show your public IP\n2). Ping a device on network\n3). Find open port of a device</item>
+    </string-array>
+    <string-array name="boarding_title_texts">
+        <item>Slow wifi?</item>
+        <item>Change device name</item>
+        <item>Network tools</item>
+    </string-array>
+    <string-array name="boarding_sub_title_texts">
+        <item>Do you feel someone is stealing your wifi? find them out using Who\'sConnected</item>
+        <item>Change device name according to your choice</item>
+        <item>In addition, this app also show your public IP, ping a device and find open ports of a device</item>
+    </string-array>
+</resources>

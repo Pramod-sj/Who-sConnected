@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_top_bottom_margin">5sp</dimen>
+    <dimen name="card_left_right_margin">10sp</dimen>
+    <dimen name="content_padding">10sp</dimen>
+    <dimen name="primary_text_size">18sp</dimen>
+    <dimen name="secondary_text_size">16sp</dimen>
+    <dimen name="secondary_small_text_size">14sp</dimen>
+</resources>

@@ -1,0 +1,55 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@color/backgroundColor</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/backgroundColor</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
+        <item name="android:fontFamily">@font/productsans_medium</item>
+        <item name="floatingActionButtonStyle">@AppTheme.FAB</item>
+        <item name="bottomSheetDialogTheme">@style/AppTheme.BottomSheetStyle</item>
+        <item name="actionOverflowButtonStyle">@style/AppTheme.OverflowButtonStyle</item>
+        <item name="android:navigationBarColor">@color/backgroundColor</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+    <style name="AppTheme.PopupOverlay" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:colorBackground">@color/colorPrimaryDark</item>
+        <item name="android:iconTint" tools:targetApi="o">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.OverflowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:tint">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.PopupStyle" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:colorBackground">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppTheme.ToolbarTextAppearance" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="AppTheme.OutlineButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+    </style>
+
+    <style name="AppTheme.FAB" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="tint">@android:color/black</item>
+    </style>
+
+    <style name="BottomSheetModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bottom_sheet_background</item>
+    </style>
+    <style name="AppTheme.BottomSheetStyle" parent="Theme.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetModalStyle</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+</resources>

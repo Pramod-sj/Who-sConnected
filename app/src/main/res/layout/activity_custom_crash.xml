@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <ImageView
+            android:id="@+id/bugImageView"
+            android:layout_centerHorizontal="true"
+                android:layout_margin="15dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_outline_bug_report_24px"/>
+            <TextView
+                android:layout_below="@id/bugImageView"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/bugText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Something went wrong"
+                android:textSize="@dimen/primary_text_size" />
+            <ScrollView
+                android:layout_margin="15dp"
+                android:layout_above="@id/buttonLayout"
+                android:id="@+id/errorStackScroll"
+                android:layout_below="@+id/bugText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="5dp"
+                    android:id="@+id/errorStack"
+                    android:textSize="@dimen/secondary_small_text_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </ScrollView>
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:padding="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.button.MaterialButton
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/send_log_button"
+                android:text="restart app"
+                android:textColor="@android:color/black"
+                android:singleLine="true"
+                android:layout_marginRight="2dp"
+                android:tooltipText="Restart"
+                android:onClick="restart"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:layout_marginRight="2dp"
+                android:tooltipText="Clear app data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/send_log_button"
+                android:text="clear app data"
+                android:layout_marginLeft="2dp"
+                android:textColor="@android:color/black"
+                android:onClick="clearAppData"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:id="@+id/send_log_button"
+                android:backgroundTint="?colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send logs"
+                android:tooltipText="Send logs"
+                android:layout_marginLeft="2dp"
+                android:onClick="sendLog"/>
+        </LinearLayout>
+    </RelativeLayout>

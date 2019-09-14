@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PlaceHolder">
+        <attr name="setPlaceHolderImage" format="reference"/>
+        <attr name="setPlaceHolderTitle" format="string"/>
+        <attr name="setPlaceHolderMessage" format="string"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15sp"
+    android:animateLayoutChanges="true"
+    android:paddingRight="15sp"
+    android:paddingBottom="5sp">
+    <ImageView
+        android:layout_width="24sp"
+        android:tint="@android:color/white"
+        android:layout_height="24sp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="3sp"
+        android:src="@drawable/ic_router_black_24dp"/>
+    <TextView
+        android:gravity="bottom"
+        android:id="@+id/wifiNameIPAddressTextView"
+        android:singleLine="true"
+        android:layout_gravity="center_vertical"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingLeft="5sp"
+        android:paddingRight="5sp"
+        android:layout_marginBottom="-2sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Redmi 7 (192.168.43.1)"/>
+</LinearLayout>

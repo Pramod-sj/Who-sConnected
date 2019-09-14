@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#15F5A4</color>
+    <color name="colorPrimaryDark">#1F1F25</color>
+    <color name="colorAccent">#15F5A4</color>
+    <color name="darkColorAccent">#0FAA71</color>
+    <color name="backgroundColor">#25252C</color>
+    <color name="ripple_color">#5515F5A4</color>
+</resources>
